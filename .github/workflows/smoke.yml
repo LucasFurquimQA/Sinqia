@@ -3,7 +3,7 @@ name: Run JMeter Smoke Test
 on:
   push:
     branches:
-      - smoke
+      - main
   pull_request:
 
 jobs:
