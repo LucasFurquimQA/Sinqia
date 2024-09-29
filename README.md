@@ -34,6 +34,7 @@ Este documento descreve os resultados dos testes de performance realizados para 
 Estatísticas:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
 Esta imagem representa as estatisticas de Tempos de Respostas (90pct e Máxima), Vazão e Erros sumarizados.
+
 Aqui podemos observar que a porcentem de erros foi baixa, o tempo de resposta máximo de uma requisição foi de 21 minutos oque impactou diretamente no resultado final de vazão, o tempo de resposta considerando o percentil 90 foi de 2 segundos porém a vazão ficou em 234rps.
 
 Tempo de Resposta (90pct):
