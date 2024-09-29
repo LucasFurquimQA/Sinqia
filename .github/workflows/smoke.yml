@@ -13,11 +13,12 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 
+      - name: Setup JMeter
+        uses: tush-tr/setup-jmeter@v1.1.0
+
       - name: Run JMeter tests
-        uses: sebiboga/run-jmeter-github-action@v0.0.5
-        with:
-          test_files: "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx"
-          result_file: "Teste_QA_Performance_Sinqia/agg/result.jtl"
+        run: |
+          jmeter -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
