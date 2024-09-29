@@ -24,12 +24,12 @@ jobs:
 
       - name: Run JMeter tests and generate result file
         run: |
-          jmeter -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
+          jmeter.bat -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
           mkdir -p report/html
-          jmeter -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o report/html
+          jmeter.bat -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o report/html
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
