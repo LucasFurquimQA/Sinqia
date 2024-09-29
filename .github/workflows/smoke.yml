@@ -19,7 +19,11 @@ jobs:
           sudo apt-get install -y openjdk-11-jdk
           wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
           tar -xzf apache-jmeter-5.5.tgz
-          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
+          echo "export PATH=\$PATH:\$PWD/apache-jmeter-5.5/bin" >> $GITHUB_ENV
+
+      - name: Verify JMeter Installation
+        run: |
+          jmeter -v
 
       - name: Run JMeter tests and generate result file
         run: |
