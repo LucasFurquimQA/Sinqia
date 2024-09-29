@@ -31,7 +31,17 @@ Este documento descreve os resultados dos testes de performance realizados para 
 
 ### Gráficos LOAD Test
 
+Estatisticas
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
+
+Tempo de Resposta (90pct)
+<img src="Teste QA Performance - Sinqia/report/Load/pngs/90pct.jpg" />
+
+Vazão
+<img src="Teste QA Performance - Sinqia/report/Load/pngs/vazao.jpg" />
+
+Erros
+<img src="Teste QA Performance - Sinqia/report/Load/pngs/erros.jpg" />
 
 
 
