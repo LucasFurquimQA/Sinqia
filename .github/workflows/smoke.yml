@@ -26,16 +26,16 @@ jobs:
       - name: Run JMeter tests and generate result file
         run: |
           export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
-          jmeter -n -t "Teste QA Performance - Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste QA Performance - Sinqia/agg/result.jtl"
+          jmeter -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
           export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
-          mkdir -p "Teste QA Performance - Sinqia/report/Smoke"
-          jmeter -g "Teste QA Performance - Sinqia/agg/result.jtl" -o "Teste QA Performance - Sinqia/report/Smoke"
+          mkdir -p "Teste_QA_Performance_Sinqia/report/Smoke"
+          jmeter -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o "Teste_QA_Performance_Sinqia/report/Smoke"
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
         with:
           name: jmeter-html-report
-          path: "Teste QA Performance - Sinqia/report/Smoke"
+          path: "Teste_QA_Performance_Sinqia/report/Smoke"

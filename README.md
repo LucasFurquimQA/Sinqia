@@ -32,25 +32,25 @@ Este documento descreve os resultados dos testes de performance realizados para 
 ### Estatísticas e Gráficos LOAD Test
 
 Estatísticas:
-<img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
 Esta imagem representa as estatisticas de Tempos de Respostas (90pct e Máxima), Vazão e Erros sumarizados.
 
 Aqui podemos observar que a porcentem de erros foi baixa, o tempo de resposta máximo de uma requisição foi de 21 minutos oque impactou diretamente no resultado final de vazão, o tempo de resposta considerando o percentil 90 foi de 2 segundos porém a vazão ficou em 234rps.
 
 Tempo de Resposta (90pct):
-<img src="Teste QA Performance - Sinqia/report/Load/pngs/90pct.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Load/pngs/90pct.jpg" />
 Esta imagem representa o gráfico de tempo de resposta (90pct) em tempo real.
 
 Neste gráfico podemos observar que o tempo de resposta considerando o percentil 90 ficou abaixo do máximo esperado (2 segundos) durante quase toda a execução do teste. A aplicação demonstra uma boa capacidade de tempo de resposta com carga continua.
 
 Vazão:
-<img src="Teste QA Performance - Sinqia/report/Load/pngs/vazao.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Load/pngs/vazao.jpg" />
 Esta imagem representa o gráfico de vazão em tempo real.
 
 Neste gráfico podemos observar que vazão ficou acima do esperado (250rps) durante toda a execução do teste.
 
 Erros:
-<img src="Teste QA Performance - Sinqia/report/Load/pngs/erros.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Load/pngs/erros.jpg" />
 Esta imagem representa as porcentagens de Erros sumarizados.
 
 Todos os erros são relacionados a Connection Closed, Timeouts e Connection Reset.
@@ -67,25 +67,25 @@ Todos os erros são relacionados a Connection Closed, Timeouts e Connection Rese
 ### Estatísticas e Gráficos SPIKE Test
 
 Estatísticas:
-<img src="Teste QA Performance - Sinqia/report/Spike/pngs/estatisticas_gerais.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Spike/pngs/estatisticas_gerais.jpg" />
 Esta imagem representa as estatisticas de Tempos de Respostas (90pct e Máxima), Vazão e Erros sumarizados.
 
 Aqui podemos observar que a porcentem de erros foi baixa, o tempo de resposta máximo foi de 24 segundos e o tempo de resposta considerando o percentil 90 foi de 1.7 segundos porém a vazão ficou em 182rps.
 
 Tempo de Resposta (90pct):
-<img src="Teste QA Performance - Sinqia/report/Spike/pngs/90pct.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Spike/pngs/90pct.jpg" />
 Esta imagem representa o gráfico de tempo de resposta (90pct) em tempo real.
 
 Neste gráfico podemos observar que o tempo de resposta considerando o percentil 90 ficou acima do máximo esperado (2 segundos) durante toda a execução do teste e principalmente nos momentos de pico. A aplicação não demonstra uma escalabilidade rápida levando em conta o aumentos de requisições repentinas.
 
 Vazão:
-<img src="Teste QA Performance - Sinqia/report/Spike/pngs/vazao.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Spike/pngs/vazao.jpg" />
 Esta imagem representa o gráfico de vazão em tempo real.
 
 Neste gráfico podemos observar que a vazão ficou abaixo do esperado (250rps) durante toda a execução do teste. Isso demonstra que a aplicação não se recupera após exposta a picos de requisições.
 
 Erros:
-<img src="Teste QA Performance - Sinqia/report/Spike/pngs/erros.jpg" />
+<img src="Teste_QA_Performance_Sinqia/report/Spike/pngs/erros.jpg" />
 Esta imagem representa as porcentagens de Erros sumarizados.
 
 Todos os erros são relacionados a Timeouts.
