@@ -77,16 +77,6 @@
 
 </details>
 
-<details>
-<summary><strong>Dicas Finais</strong></summary>
-
-- **Verifique a documentação:** Para configurações específicas ou plugins adicionais, consulte a documentação oficial do JMeter.
-- **Executar em modo não gráfico (opcional):** Se você preferir executar o JMeter em modo não gráfico, abra o Prompt de Comando e execute:
-
-```bash
-jmeter -n -t C:\caminho\para\seu\script.jmx -l C:\caminho\para\resultados.jtl
-</details> ```
-
 # Relatório de Teste de Performance 28/09/2024
 
 Este documento descreve os resultados dos testes de performance realizados para avaliar o desempenho da funcionalidade de compra de passagens aplicação <a href="https://www.blazedemo.com/">blazedemo</a>.
