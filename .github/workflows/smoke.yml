@@ -23,8 +23,7 @@ jobs:
 
       - name: Generate HTML report
         run: |
-          # mkdir -p report/html
-          jmeter -g 'Teste_QA_Performance_Sinqia/agg/result.jtl' -o 'Teste_QA_Performance_Sinqia/report/Smoke'
+          jmeter -g 'Teste_QA_Performance_Sinqia/agg/result.jtl' -o Teste_QA_Performance_Sinqia/report/Smoke
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
