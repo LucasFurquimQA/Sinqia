@@ -13,23 +13,16 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 
-      - name: Install JMeter
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y openjdk-11-jdk
-          wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
-          tar -xzf apache-jmeter-5.5.tgz
-          echo "export PATH=$PATH:$PWD/apache-jmeter-5.5/bin" >> $GITHUB_ENV
-          ls -la $PWD/apache-jmeter-5.5/bin
-
-      - name: Run JMeter tests and generate result file
-        run: |
-          jmeter.bat -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
+      - name: Run JMeter tests
+        uses: sebiboga/run-jmeter-github-action@v0.0.5
+        with:
+          test_files: "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx"
+          result_file: "Teste_QA_Performance_Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
           mkdir -p report/html
-          jmeter.bat -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o report/html
+          jmeter -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o report/html
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
