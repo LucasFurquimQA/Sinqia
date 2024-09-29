@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-   pull_request:
-   workflow_dispatch:  # Permite execução manual
+   workflow_dispatch:
 
 jobs:
   run-jmeter:
