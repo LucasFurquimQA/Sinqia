@@ -1,4 +1,4 @@
-name: Run JMeter Tests
+name: Run JMeter Performance Tests
 
 on:
   push:
@@ -13,12 +13,13 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 
-      - name: Setup JMeter
-        uses: tush-tr/setup-jmeter@v1.1.0
-
-      - name: Run JMeter tests
-        run: |
-          jmeter -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
+      - name: PerfAction for JMeter
+        uses: QAInsights/PerfAction@v5.6.2
+        with:
+          # Caminho do arquivo JMX de teste
+          test-file: "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx"
+          # Caminho para salvar o arquivo de resultados
+          result-file: "Teste_QA_Performance_Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
