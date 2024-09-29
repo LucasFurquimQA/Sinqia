@@ -55,6 +55,7 @@
 
 1. **Carregar o script JMeter:**
    - Na interface gráfica do JMeter, vá para `File > Open...` e selecione o arquivo `Compra_Passagem_SMOKE.jmx, Compra_Passagem_LOAD.jmx ou Compra_Passagem_SPIKE.jmx`.
+   <img src="Teste_QA_Performance_Sinqia/pngs/tests.jpg" />
 
 </details>
 
@@ -63,6 +64,7 @@
 
 1. **Executar o teste:**
    - Clique no botão de **Iniciar** (ícone de play) na barra de ferramentas ou pressione `Ctrl + R` para iniciar a execução do script.
+   <img src="Teste_QA_Performance_Sinqia/pngs/iniciar.jpg" />
 
 </details>
 
