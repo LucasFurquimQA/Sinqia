@@ -23,12 +23,12 @@ jobs:
 
       - name: Run JMeter tests and generate result file
         run: |
-          jmeter -n -t Teste QA Performance - Sinqia\Compra_Passagem_SMOKE.jmx -l Teste QA Performance - Sinqia\agg\result.jtl
+          jmeter -n -t Teste QA Performance - Sinqia/Compra_Passagem_SMOKE.jmx -l Teste QA Performance - Sinqia/agg/result.jtl
 
       - name: Generate HTML report
         run: |
           mkdir -p report
-          jmeter -g Teste QA Performance - Sinqia\agg\result.jtl -o Teste QA Performance - Sinqia\report\Smoke
+          jmeter -g Teste QA Performance - Sinqia/agg/result.jtl -o Teste QA Performance - Sinqia/report/Smoke
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
