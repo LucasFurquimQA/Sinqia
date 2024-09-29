@@ -31,16 +31,16 @@ Este documento descreve os resultados dos testes de performance realizados para 
 
 ### Gráficos LOAD Test
 
-Estatisticas
+Estatisticas:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
 
-Tempo de Resposta (90pct)
+Tempo de Resposta (90pct):
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/90pct.jpg" />
 
-Vazão
+Vazão:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/vazao.jpg" />
 
-Erros
+Erros:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/erros.jpg" />
 
 
@@ -55,7 +55,17 @@ Erros
 ### Gráficos SPIKE Test
 Se você gerou gráficos de performance, pode anexá-los aqui. Utilize imagens ou links para visualizações.
 
-![Estatísticas](Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg)
+Estatisticas:
+<img src="Teste QA Performance - Sinqia/report/Spike/pngs/estatisticas_gerais.jpg" />
+
+Tempo de Resposta (90pct):
+<img src="Teste QA Performance - Sinqia/report/Spike/pngs/90pct.jpg" />
+
+Vazão:
+<img src="Teste QA Performance - Sinqia/report/Spike/pngs/vazao.jpg" />
+
+Erros:
+<img src="Teste QA Performance - Sinqia/report/Spike/pngs/erros.jpg" />
 
 ## Conclusões
 - O sistema apresentou **boa escalabilidade** com o aumento do número de requisições.
