@@ -1,4 +1,4 @@
-# Tutorial: Executar um Script JMeter no Windows
+# Como Executar um Script JMeter no Windows
 
 <details>
 <summary><strong>Passo 1: Baixar o JMeter</strong></summary>
@@ -54,17 +54,14 @@
 <summary><strong>Passo 5: Importar o Script Existente</strong></summary>
 
 1. **Carregar o script JMeter:**
-   - Na interface gráfica do JMeter, vá para `File > Open...` e selecione o arquivo `.jmx` do seu script existente.
+   - Na interface gráfica do JMeter, vá para `File > Open...` e selecione o arquivo `Compra_Passagem_SMOKE.jmx, Compra_Passagem_LOAD.jmx ou Compra_Passagem_SPIKE.jmx`.
 
 </details>
 
 <details>
 <summary><strong>Passo 6: Executar o Script</strong></summary>
 
-1. **Configurar a execução:**
-   - Após abrir o script, revise as configurações de ambiente e variáveis, conforme necessário. Verifique se todas as dependências e configurações do seu script estão corretas.
-
-2. **Executar o teste:**
+1. **Executar o teste:**
    - Clique no botão de **Iniciar** (ícone de play) na barra de ferramentas ou pressione `Ctrl + R` para iniciar a execução do script.
 
 </details>
@@ -73,7 +70,8 @@
 <summary><strong>Passo 7: Analisar os Resultados</strong></summary>
 
 1. **Ver os resultados:**
-   - Os resultados da execução serão exibidos nos listeners que você adicionou ao seu teste. Você pode adicionar ouvintes como **View Results Tree** ou **Summary Report** para visualizar os dados de forma mais clara.
+   - Os resultados da execução serão exibidos nos listeners de Relatório Agregado como na imagem abaixo.
+   <img src="Teste_QA_Performance_Sinqia/pngs/agg.jpg" />
 
 </details>
 
