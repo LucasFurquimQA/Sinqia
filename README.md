@@ -4,7 +4,7 @@ Este documento descreve os resultados dos testes de performance realizados para 
 
 ## Ferramentas Utilizadas
 - **Ferramenta de teste**: JMeter
-- **Ambiente de teste**: (Descrever as características do ambiente de execução)
+- **Ambiente de teste**: Produção
   - **Sistema Operacional**: Windows 11
   - **CPU**: Intel Core i5 11600K 3.91 GHz
   - **Memória RAM**: 32GB
@@ -33,15 +33,19 @@ Este documento descreve os resultados dos testes de performance realizados para 
 
 Estatisticas:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
+Esta imagem representa as estatisticas de Tempos de Respostas (90pct e Máxima), Vazão e Erros sumarizados.
 
 Tempo de Resposta (90pct):
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/90pct.jpg" />
+Esta imagem representa o gráfico de tempo de resposta (90pct) em tempo real.
 
 Vazão:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/vazao.jpg" />
+Esta imagem representa o gráfico de vazão em tempo real.
 
 Erros:
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/erros.jpg" />
+Esta imagem representa as porcentagens de Erros sumarizados.
 
 
 
@@ -53,19 +57,23 @@ Erros:
 - **Porcentagem de Erros**: `4.24`
 
 ### Gráficos SPIKE Test
-Se você gerou gráficos de performance, pode anexá-los aqui. Utilize imagens ou links para visualizações.
 
 Estatisticas:
 <img src="Teste QA Performance - Sinqia/report/Spike/pngs/estatisticas_gerais.jpg" />
+Esta imagem representa as estatisticas de Tempos de Respostas (90pct e Máxima), Vazão e Erros sumarizados.
 
 Tempo de Resposta (90pct):
 <img src="Teste QA Performance - Sinqia/report/Spike/pngs/90pct.jpg" />
+Esta imagem representa o gráfico de tempo de resposta (90pct) em tempo real.
 
 Vazão:
 <img src="Teste QA Performance - Sinqia/report/Spike/pngs/vazao.jpg" />
+Esta imagem representa o gráfico de vazão em tempo real.
 
 Erros:
 <img src="Teste QA Performance - Sinqia/report/Spike/pngs/erros.jpg" />
+Esta imagem representa as porcentagens de Erros sumarizados.
+
 
 ## Conclusões
 - O sistema apresentou **boa escalabilidade** com o aumento do número de requisições.
