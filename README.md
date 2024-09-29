@@ -88,7 +88,7 @@ Erros:
 <img src="Teste QA Performance - Sinqia/report/Spike/pngs/erros.jpg" />
 Esta imagem representa as porcentagens de Erros sumarizados.
 
-Todos os erros são relacionados a Connection Closed, Timeouts e Connection Reset.
+Todos os erros são relacionados a Timeouts.
 
 
 ## Conclusões
