@@ -17,7 +17,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y openjdk-11-jdk
-          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.5.tgz
+          wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
           tar -xzf apache-jmeter-5.5.tgz
           export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
 
