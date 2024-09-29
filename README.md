@@ -29,7 +29,7 @@ Este documento descreve os resultados dos testes de performance realizados para 
 - **Tempo de Resposta 90pct**: `2 segundos (2007ms)`
 - **Porcentagem de Erros**: `0.08`
 
-<b1> Gráficos LOAD Test <\b1> 
+<b1> Gráficos LOAD Test </b1> 
 
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
 
