@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  pull_request:
+   pull_request:
+   workflow_dispatch:  # Permite execução manual
 
 jobs:
   run-jmeter:
@@ -23,7 +24,7 @@ jobs:
 
       - name: Generate HTML report
         run: |
-          jmeter -g 'Teste_QA_Performance_Sinqia/agg/result.jtl' -o Teste_QA_Performance_Sinqia/report/Smoke
+          jmeter -g 'Teste_QA_Performance_Sinqia/agg/result.jtl' -o 'Teste_QA_Performance_Sinqia/report/Smoke'
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
