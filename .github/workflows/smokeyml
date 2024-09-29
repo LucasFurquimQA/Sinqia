@@ -1,0 +1,37 @@
+name: Run JMeter Smoke Test
+
+on:
+  push:
+    branches:
+      - smoke
+  pull_request:
+
+jobs:
+  run-jmeter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Install JMeter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jdk
+          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.5.tgz
+          tar -xzf apache-jmeter-5.5.tgz
+          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
+
+      - name: Run JMeter tests and generate result file
+        run: |
+          jmeter -n -t Teste QA Performance - Sinqia\Compra_Passagem_SMOKE.jmx -l Teste QA Performance - Sinqia\agg\result.jtl
+
+      - name: Generate HTML report
+        run: |
+          mkdir -p report
+          jmeter -g Teste QA Performance - Sinqia\agg\result.jtl -o Teste QA Performance - Sinqia\report\Smoke
+
+      - name: Upload HTML report as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: jmeter-html-report
+          path: report/html
