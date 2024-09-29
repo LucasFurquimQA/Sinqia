@@ -1,4 +1,93 @@
-# Relatório de Teste de Performance
+# Tutorial: Executar um Script JMeter no Windows
+
+<details>
+<summary><strong>Passo 1: Baixar o JMeter</strong></summary>
+
+1. **Acesse o site oficial do JMeter:**
+   - Abra o seu navegador e vá até a página de downloads do Apache JMeter: [Apache JMeter Downloads](https://jmeter.apache.org/download_jmeter.cgi).
+
+2. **Baixe a versão mais recente:**
+   - Clique no link do arquivo ZIP para baixar a versão mais recente do JMeter (ex: `apache-jmeter-x.x.zip`).
+
+</details>
+
+<details>
+<summary><strong>Passo 2: Instalar o JMeter</strong></summary>
+
+1. **Descompactar o arquivo:**
+   - Localize o arquivo ZIP baixado. Clique com o botão direito do mouse e selecione **Extrair Tudo...** para descompactar o arquivo em um diretório de sua escolha (por exemplo, `C:\jmeter`).
+
+2. **Instalar o Java (se necessário):**
+   - O JMeter requer Java. Para verificar se o Java está instalado, abra o Prompt de Comando (pressione `Windows + R`, digite `cmd` e pressione Enter) e execute o seguinte comando:
+
+     ```bash
+     java -version
+     ```
+
+   - Se o Java não estiver instalado, você pode baixar o JDK (Java Development Kit) do [Oracle Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) ou usar uma versão do OpenJDK. Após a instalação, verifique novamente no Prompt de Comando.
+
+</details>
+
+<details>
+<summary><strong>Passo 3: Configurar Variáveis de Ambiente (opcional)</strong></summary>
+
+1. **Adicionar à variável PATH:**
+   - Clique com o botão direito do mouse no ícone do **Windows** e selecione **Sistema**.
+   - Clique em **Configurações avançadas do sistema** no painel esquerdo.
+   - Na aba **Avançado**, clique no botão **Variáveis de Ambiente**.
+   - Na seção **Variáveis do sistema**, localize a variável chamada `Path`, selecione-a e clique em **Editar**.
+   - Clique em **Novo** e adicione o caminho do diretório `bin` do JMeter (por exemplo, `C:\jmeter\apache-jmeter-x.x\bin`).
+   - Clique em **OK** para fechar todas as janelas.
+
+</details>
+
+<details>
+<summary><strong>Passo 4: Executar o JMeter</strong></summary>
+
+1. **Abrir o JMeter:**
+   - Navegue até o diretório `bin` do JMeter (ex: `C:\jmeter\apache-jmeter-x.x\bin`) e localize o arquivo `jmeter.bat`.
+   - Clique duas vezes no `jmeter.bat` para abrir a interface gráfica do JMeter.
+
+</details>
+
+<details>
+<summary><strong>Passo 5: Importar o Script Existente</strong></summary>
+
+1. **Carregar o script JMeter:**
+   - Na interface gráfica do JMeter, vá para `File > Open...` e selecione o arquivo `.jmx` do seu script existente.
+
+</details>
+
+<details>
+<summary><strong>Passo 6: Executar o Script</strong></summary>
+
+1. **Configurar a execução:**
+   - Após abrir o script, revise as configurações de ambiente e variáveis, conforme necessário. Verifique se todas as dependências e configurações do seu script estão corretas.
+
+2. **Executar o teste:**
+   - Clique no botão de **Iniciar** (ícone de play) na barra de ferramentas ou pressione `Ctrl + R` para iniciar a execução do script.
+
+</details>
+
+<details>
+<summary><strong>Passo 7: Analisar os Resultados</strong></summary>
+
+1. **Ver os resultados:**
+   - Os resultados da execução serão exibidos nos listeners que você adicionou ao seu teste. Você pode adicionar ouvintes como **View Results Tree** ou **Summary Report** para visualizar os dados de forma mais clara.
+
+</details>
+
+<details>
+<summary><strong>Dicas Finais</strong></summary>
+
+- **Verifique a documentação:** Para configurações específicas ou plugins adicionais, consulte a documentação oficial do JMeter.
+- **Executar em modo não gráfico (opcional):** Se você preferir executar o JMeter em modo não gráfico, abra o Prompt de Comando e execute:
+
+```bash
+jmeter -n -t C:\caminho\para\seu\script.jmx -l C:\caminho\para\resultados.jtl
+</details> ```
+
+# Relatório de Teste de Performance 28/09/2024
 
 Este documento descreve os resultados dos testes de performance realizados para avaliar o desempenho da funcionalidade de compra de passagens aplicação <a href="https://www.blazedemo.com/">blazedemo</a>.
 
