@@ -13,8 +13,10 @@ jobs:
       - name: PerfAction for JMeter
         uses: QAInsights/PerfAction@v5.6.2
         with:
-          test-file: 'Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx'
-          result-file: 'Teste_QA_Performance_Sinqia/agg/result.jtl'
+          # Caminho do arquivo JMX de teste (correto: test-plan-path)
+          test-plan-path: 'Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx'
+          # Caminho para salvar o arquivo de resultados (correto: results-file)
+          results-file: 'Teste_QA_Performance_Sinqia/agg/result.jtl'
 
       - name: Generate HTML report
         run: |
