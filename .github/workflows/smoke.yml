@@ -1,4 +1,4 @@
-name: Run JMeter Smoke Test
+name: Run JMeter Tests
 
 on:
   push:
@@ -19,23 +19,20 @@ jobs:
           sudo apt-get install -y openjdk-11-jdk
           wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
           tar -xzf apache-jmeter-5.5.tgz
-          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
-          echo "JMeter installed at: $PWD/apache-jmeter-5.5/bin"
+          echo "export PATH=$PATH:$PWD/apache-jmeter-5.5/bin" >> $GITHUB_ENV
           ls -la $PWD/apache-jmeter-5.5/bin
 
       - name: Run JMeter tests and generate result file
         run: |
-          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
           jmeter -n -t "Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste_QA_Performance_Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
-          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
-          mkdir -p "Teste_QA_Performance_Sinqia/report/Smoke"
-          jmeter -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o "Teste_QA_Performance_Sinqia/report/Smoke"
+          mkdir -p report/html
+          jmeter -g "Teste_QA_Performance_Sinqia/agg/result.jtl" -o report/html
 
       - name: Upload HTML report as artifact
         uses: actions/upload-artifact@v3
         with:
           name: jmeter-html-report
-          path: "Teste_QA_Performance_Sinqia/report/Smoke"
+          path: report/html
