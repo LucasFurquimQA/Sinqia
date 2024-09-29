@@ -19,18 +19,18 @@ jobs:
           sudo apt-get install -y openjdk-11-jdk
           wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
           tar -xzf apache-jmeter-5.5.tgz
-          echo "export PATH=\$PATH:\$PWD/apache-jmeter-5.5/bin" >> $GITHUB_ENV
-
-      - name: Verify JMeter Installation
-        run: |
-          jmeter -v
+          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
+          echo "JMeter installed at: $PWD/apache-jmeter-5.5/bin"
+          ls -la $PWD/apache-jmeter-5.5/bin
 
       - name: Run JMeter tests and generate result file
         run: |
+          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
           jmeter -n -t "Teste QA Performance - Sinqia/Compra_Passagem_SMOKE.jmx" -l "Teste QA Performance - Sinqia/agg/result.jtl"
 
       - name: Generate HTML report
         run: |
+          export PATH=$PATH:$PWD/apache-jmeter-5.5/bin
           mkdir -p "Teste QA Performance - Sinqia/report/Smoke"
           jmeter -g "Teste QA Performance - Sinqia/agg/result.jtl" -o "Teste QA Performance - Sinqia/report/Smoke"
 
