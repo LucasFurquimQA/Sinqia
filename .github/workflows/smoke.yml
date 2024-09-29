@@ -10,21 +10,29 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 
-      - name: PerfAction for JMeter
+      - name: Create reports directory
+        run: mkdir -p 'Teste_QA_Performance_Sinqia/report/Smoke'
+
+      - name: JMeter Test
         uses: QAInsights/PerfAction@v5.6.2
         with:
-          # Caminho do arquivo JMX de teste (correto: test-plan-path)
-          test-plan-path: 'Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx'
-          # Caminho para salvar o arquivo de resultados (correto: results-file)
-          results-file: 'Teste_QA_Performance_Sinqia/agg/result.jtl'
+          # Caminho do arquivo de teste JMX
+          test-plan-path: './Teste_QA_Performance_Sinqia/Compra_Passagem_SMOKE.jmx'
+          # Argumentos para gerar o relatório HTML
+          args: "-e -o ./Teste_QA_Performance_Sinqia/report/Smoke/"
 
-      - name: Generate HTML report
-        run: |
-          mkdir -p 'Teste_QA_Performance_Sinqia/report/Smoke'
-          jmeter -g 'Teste_QA_Performance_Sinqia/agg/result.jtl' -o 'Teste_QA_Performance_Sinqia/report/Smoke'
-
-      - name: Upload HTML report as artifact
+      - name: Upload Results
         uses: actions/upload-artifact@v3
         with:
-          name: jmeter-html-report
-          path: 'Teste_QA_Performance_Sinqia/report/Smoke'
+          # Caminho do arquivo de resultado JTL
+          name: jmeter-results
+          path: './Teste_QA_Performance_Sinqia/agg/result.jtl'
+          if-no-files-found: error
+
+      - name: Upload HTML Reports
+        uses: actions/upload-artifact@v3
+        with:
+          # Caminho dos relatórios HTML gerados
+          name: jmeter-html-reports
+          path: './Teste_QA_Performance_Sinqia/report/Smoke'
+          if-no-files-found: error
