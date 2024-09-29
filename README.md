@@ -22,27 +22,27 @@ Este documento descreve os resultados dos testes de performance realizados para 
   
 ## Resultados
 
-## LOAD:
+## LOAD Test:
 - **Total de Requisições**: `453.269`
 - **Requisições por segundo (RPS Estatisticas)**: `234`
 - **Requisições por segundo (RPS Gráfico)**: `256-266`
 - **Tempo de Resposta 90pct**: `2 segundos (2007ms)`
 - **Porcentagem de Erros**: `0.08`
 
-<b1> Gráficos LOAD Test </b1> 
+### Gráficos LOAD Test
 
 <img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
 
 
 
-## SPIKE:
+## SPIKE Test:
 - **Total de Requisições**: `333.394`
 - **Requisições por segundo (RPS Estatisticas)**: `182`
 - **Requisições por segundo (RPS Gráfico)**: `182-212`
 - **Tempo de Resposta 90pct**: `1.7 segundos (1786ms)`
 - **Porcentagem de Erros**: `4.24`
 
-## Gráficos SPIKE Test
+### Gráficos SPIKE Test
 Se você gerou gráficos de performance, pode anexá-los aqui. Utilize imagens ou links para visualizações.
 
 ![Estatísticas](Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg)
