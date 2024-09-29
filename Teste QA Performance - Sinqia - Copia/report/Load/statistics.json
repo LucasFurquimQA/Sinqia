@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 453269,
+    "errorCount" : 366,
+    "errorPct" : 0.080746755,
+    "meanResTime" : 1024.849482316234,
+    "medianResTime" : 768.0,
+    "minResTime" : 155.0,
+    "maxResTime" : 1295446.0,
+    "pct1ResTime" : 2007.9000000000015,
+    "pct2ResTime" : 2777.0,
+    "pct3ResTime" : 3692.0,
+    "throughput" : 233.9920283432097,
+    "receivedKBytesPerSec" : 597.9927940364734,
+    "sentKBytesPerSec" : 341.24575433341397
+  },
+  "1.1 - POST - /confirmation.php" : {
+    "transaction" : "1.1 - POST - /confirmation.php",
+    "sampleCount" : 453269,
+    "errorCount" : 366,
+    "errorPct" : 0.080746755,
+    "meanResTime" : 1024.849482316234,
+    "medianResTime" : 768.0,
+    "minResTime" : 155.0,
+    "maxResTime" : 1295446.0,
+    "pct1ResTime" : 2007.9000000000015,
+    "pct2ResTime" : 2777.0,
+    "pct3ResTime" : 3692.0,
+    "throughput" : 233.9920283432097,
+    "receivedKBytesPerSec" : 597.9927940364734,
+    "sentKBytesPerSec" : 341.24575433341397
+  }
+}
