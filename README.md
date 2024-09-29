@@ -32,6 +32,7 @@ Este documento descreve os resultados dos testes de performance realizados para 
 ## Gráficos LOAD Test
 
 ![Estatísticas](Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg)
+<img src="Teste QA Performance - Sinqia/report/Load/pngs/estatisticas_gerais.jpg" />
 
 ### SPIKE:
 - **Total de Requisições**: `333.394`
