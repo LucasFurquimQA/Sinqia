@@ -151,6 +151,10 @@ Este documento descreve os resultados dos testes de performance realizados para 
   - **CPU**: Intel Core i5 11600K 3.91 GHz
   - **Memória RAM**: 32GB
   - **Rede**: 500Mbps
+
+  ## Critérios de aceitação (LOAD/SPIKE):
+- **Requisições por Segundo**: 250
+- **Tempo de Resposta (90pct)**: 2 segundos
   
 ## Metodologia de Teste
 - **Cenários testados**:
