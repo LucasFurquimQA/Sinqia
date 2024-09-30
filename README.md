@@ -77,6 +77,61 @@
 
 </details>
 
+# Como Executar o Script de SMOKE Test pelo GitHub Action
+
+<details>
+<summary><strong>Passo 1: Acessar o repositório</strong></summary>
+
+1. **Acesse o repositorio Sinqia:**
+   - Abra o seu navegador e acesso o repositório da Sinqia: [Repositório da Sinqia](https://github.com/LucasFurquimQA/Sinqia).
+
+</details>
+
+<details>
+<summary><strong>Passo 2: Navegar até o Git Actions</strong></summary>
+
+1. **Clique no Git Action:**
+   - Exemplo na imagem abaixo:
+   <img src="Teste_QA_Performance_Sinqia/pngs/action.jpg" />
+
+</details>
+
+<details>
+<summary><strong>Passo 3: Acessar a action do JMeter</strong></summary>
+
+1. **Clique no Run JMeter Performance Tests:**
+   - Exemplo na imagem abaixo:
+   <img src="Teste_QA_Performance_Sinqia/pngs/runjmeter.jpg" />
+
+</details>
+
+<details>
+<summary><strong>Passo 4: Executar o Workflow</strong></summary>
+
+1. **Clique em Run Workflow:**
+   - Exemplo na imagem abaixo:
+   <img src="Teste_QA_Performance_Sinqia/pngs/runworkflow.jpg" />
+   
+</details>
+
+<details>
+<summary><strong>Passo 5: Aguardar a execução e exportar resultados</strong></summary>
+
+1. **Após a execução do teste os artefatos serão gerados:**
+   - Faça o download do jmeter-html-reports, exemplo na imagem abaixo:
+   <img src="Teste_QA_Performance_Sinqia/pngs/report.jpg" />
+   
+2. **Extraia o relatório:**
+   - Faça a extração do relatório:
+   <img src="Teste_QA_Performance_Sinqia/pngs/extrair.jpg" />   
+   
+3. **Acesse o relatório:**
+   - Faça a extração do relatório:
+   <img src="Teste_QA_Performance_Sinqia/pngs/acessar.jpg" />   
+
+</details>
+
+
 # Relatório de Teste de Performance 28/09/2024
 
 Este documento descreve os resultados dos testes de performance realizados para avaliar o desempenho da funcionalidade de compra de passagens aplicação <a href="https://www.blazedemo.com/">blazedemo</a>.
