@@ -126,7 +126,7 @@
    <img src="Teste_QA_Performance_Sinqia/pngs/extrair.jpg" />   
    
 3. **Acesse o relatório:**
-   - Faça a extração do relatório:
+   - Realize o acesso ao relatório:
    <img src="Teste_QA_Performance_Sinqia/pngs/acessar.jpg" />   
 
 </details>
