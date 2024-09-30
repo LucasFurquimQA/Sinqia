@@ -53,8 +53,16 @@
 <details>
 <summary><strong>Passo 5: Importar o Script Existente</strong></summary>
 
-1. **Carregar o script JMeter:**
-   - Na interface gráfica do JMeter, vá para `File > Open...` e selecione o arquivo `Compra_Passagem_SMOKE.jmx, Compra_Passagem_LOAD.jmx ou Compra_Passagem_SPIKE.jmx`.
+1. **Fazer Download dos arquivos do teste:**
+   - Acesse [Repositório da Sinqia](https://github.com/LucasFurquimQA/Sinqia) e faça o download do arquivo ZIP.
+   <img src="Teste_QA_Performance_Sinqia/pngs/downloadzip.jpg" />
+   
+2. **Extraia os arquivos dos testes:**
+   - Realize a extração dos arquivos para a pasta que quiser.
+   <img src="Teste_QA_Performance_Sinqia/pngs/sinqia_extrair.jpg" />
+   
+3. **Carregar o script JMeter:**
+   - Na interface gráfica do JMeter, vá para `File > Open... Sinqia-main\Teste_QA_Performance_Sinqia` e selecione o arquivo `Compra_Passagem_SMOKE.jmx, Compra_Passagem_LOAD.jmx ou Compra_Passagem_SPIKE.jmx`.
    <img src="Teste_QA_Performance_Sinqia/pngs/tests.jpg" />
 
 </details>
