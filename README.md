@@ -152,7 +152,7 @@ Este documento descreve os resultados dos testes de performance realizados para 
   - **Memória RAM**: 32GB
   - **Rede**: 500Mbps
 
-  ## Critérios de aceitação (LOAD/SPIKE):
+## Critérios de aceitação (LOAD/SPIKE):
 - **Requisições por Segundo**: 250
 - **Tempo de Resposta (90pct)**: 2 segundos
   
