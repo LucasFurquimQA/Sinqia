@@ -230,6 +230,7 @@ Todos os erros são relacionados a Timeouts.
 - Identificamos uma pequena degradação de performance a partir de 300 requisições simultâneas levando em consideração o critério de aceite de tempo de resposta.
 - Não foram Identifidos erros significativos no LOAD Test.
 - A aplicação apresentou mais erros no teste de PICO, mesmo assim pela carga aplicada não foram considerados expressivos.
+- Somente o SMOKE Test foi colocado para execução via GitHub Actions pois o outros testes geram arquivos muito pesados para serem processados como artefatos.
 
 ## Recomendações
 - Fornecer monitoramentos de infraestrutura, aplicação e banco de dados para melhor analise e calculo de um plano de teste voltado para a realidade de acessos simultâneos da aplicação.
